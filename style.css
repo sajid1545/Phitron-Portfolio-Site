@@ -356,6 +356,7 @@ body {
 /* Project Image Slider */
 
 .project-slider {
+    position: relative;
     height: 100%;
     padding: 15px;
 }
@@ -372,6 +373,39 @@ body {
     width: 100%;
     height: 330px;
     object-fit: cover;
+}
+
+/* Slider Previous and Next Buttons */
+
+.project-control-prev,
+.project-control-next {
+    top: 50%;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: rgba(16, 227, 234, 0.85);
+    color: #191919;
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.project-control-prev {
+    left: 25px;
+}
+
+.project-control-next {
+    right: 25px;
+}
+
+.project-control-prev i,
+.project-control-next i {
+    font-size: 18px;
+}
+
+.project-control-prev:hover,
+.project-control-next:hover {
+    background-color: white;
+    color: #191919;
 }
 
 /* Project Content */
@@ -491,6 +525,25 @@ body {
     .project-image {
         height: 240px;
         object-fit: contain;
+    }
+
+    .project-control-prev,
+    .project-control-next {
+        width: 34px;
+        height: 34px;
+    }
+
+    .project-control-prev {
+        left: 15px;
+    }
+
+    .project-control-next {
+        right: 15px;
+    }
+
+    .project-control-prev i,
+    .project-control-next i {
+        font-size: 14px;
     }
 
     .project-content {
